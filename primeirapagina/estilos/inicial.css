@@ -78,3 +78,84 @@ footer {
 a {
     text-decoration: none;
 }
+
+.slides {
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 400px;
+    height: 350px;
+    padding: 32px;
+    border-radius: 32px;
+    
+  }
+
+  .title{
+    font-size: 16px;
+    width:  100%;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  img {
+    width: auto;
+    height: 280px;
+  }
+
+  .botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding-top: 370px;
+  }
+
+  .button {
+    align-content: center;
+    background-color: #D41D1D;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 999px;
+  }
+
+  .dot-box {
+    text-align: center;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #D41D1D;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+  }
