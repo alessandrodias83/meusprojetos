@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(56, 56, 56);
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    
+    
+}
+
+nav li a {
+    display: inline;
+    text-decoration: none;
+    color: #fff; 
+    padding: 10px;
+    
+    
+    
+}
+
+nav li a:hover {
+    background-color: rgb(48, 206, 114);
+
+}
+
+.dropdown-menu {
+    position: absolute;
+    box-shadow: 0 0 2px rgb(67, 161, 67);
+    display: none;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: black;
+
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+
+}
