@@ -36,6 +36,79 @@ nav {
     
 }
 
+.sidebar .text{
+  color: white;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 15px;
+  text-align: start;
+  letter-spacing: 1px;
+  
+}
+
+nav ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+
+nav ul li {
+  line-height: 35px;
+}
+
+nav ul li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding-left: 2px;
+  display: block;
+  width: 100%;
+
+}
+
+nav ul li a:hover {
+  color: brown;
+  background: #a2a2a2;
+  border-left: 3px solid transparent;
+  border-left-color: #D41D1D;
+
+}
+
+nav ul ul {
+  position: static;
+  display: none;
+}
+
+nav ul .feat-show.show{
+  display: block;
+}
+
+nav ul ul li {
+  line-height: 22px;
+}
+
+nav ul ul li a {
+  font-size: 15;
+  padding-left: 16px;
+
+}
+
+nav ul li a span {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  transition: transform 0.4s;
+}
+
+nav ul li a span:hover {
+  transform: translateY(-50%) rotate(-180deg);
+  
+
+}
+
 main {
     flex: 20 1 500px;  
     height: calc(100vh - 174px);  
@@ -159,3 +232,4 @@ a {
     from {opacity: .2}
     to {opacity: 1}
   }
+ 
