@@ -1,0 +1,143 @@
+HTML
+
+ <div class="container">
+            <div class="slides fade">
+                 <img src="imagens/corsaca.jpg">
+                 <h2 class="title">Corsa 2001</h2>
+             </div>
+             <div class="slides fade">
+                 <img src="imagens/palioca.jpg">
+                 <h2 class="title">Palio 2005</h2>
+             </div>
+             <div class="slides fade">
+                 <img src="imagens/puntoca.jpg">
+                 <h2 class="title">Punto 2011</h2>
+             </div>
+             <div class="slides fade">
+                 <img src="imagens/fiestaca.jpg">
+                 <h2 class="title">Fiesta 2014</h2>
+             </div>
+             <div class="slides fade">
+                 <img src="imagens/celtaca.jpg">
+                 <h2 class="title">Celta 2011</h2>
+             </div>
+             <div class="slides fade">
+                 <img src="imagens/civicca.jpg">
+                 <h2 class="title">Civic 2015</h2>
+             </div>
+             <div class="slides fade">
+                 <img src="imagens/corollaca.jpg">
+                 <h2 class="title">Corolla 2005</h2>
+             </div>
+             <div class="slides fade">
+                 <img src="imagens/unoca.jpg">
+                 <h2 class="title">Uno 2021</h2>
+             </div>
+        </div>
+ 
+         <div class="botao">
+             <button class="button" onclick="addSlides(1)">Próximo</button>
+             <div class="dot-box">
+                 <span class="dot" onclick="currentSlide(1)"></span>
+                 <span class="dot" onclick="currentSlide(2)"></span>
+                 <span class="dot" onclick="currentSlide(3)"></span>
+                 <span class="dot" onclick="currentSlide(4)"></span>
+                 <span class="dot" onclick="currentSlide(5)"></span>
+                 <span class="dot" onclick="currentSlide(6)"></span>
+                 <span class="dot" onclick="currentSlide(7)"></span>
+                 <span class="dot" onclick="currentSlide(8)"></span>
+             </div>
+
+
+
+             -----------------------
+
+
+             css
+
+             #h1menu {
+                font-size: 16px;
+            }
+
+
+            
+.slides {
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 400px;
+    height: 350px;
+    padding: 32px;
+    border-radius: 32px;
+    
+  }
+
+  .title{
+    font-size: 16px;
+    width:  100%;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  img {
+    width: auto;
+    height: 280px;
+  }
+
+  .botao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+    padding-top: 220px;
+  }
+
+  .button {
+    align-content: center;
+    background-color: #D41D1D;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 999px;
+  }
+
+  .dot-box {
+    text-align: center;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #4b4141;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+  }

@@ -19,8 +19,7 @@ body {
 header, nav, main, aside, footer {
     background: #a1a1a1;
     display: flex;
-    margin: 3px;
-     
+    margin: 3px;  
 }
 
 header {
@@ -35,8 +34,7 @@ nav {
     flex: 1 1 200px;
     flex-direction: column;
     padding: 20px;
-    gap: 14px;
-    
+    gap: 14px;   
 }
 
 .btn {
@@ -50,7 +48,6 @@ nav {
   border-radius: 3px;
   cursor: pointer;
   transition: left 0.4s ease;
-
 }
 
 .btn.click {
@@ -88,7 +85,6 @@ nav {
   text-align: start;
   background: #1e1e1e;
   letter-spacing: 1px;
-  
 }
 
 nav ul {
@@ -116,7 +112,6 @@ nav ul li a {
   display: block;
   width: 100%;
   border-left: 3px solid transparent;
-
 }
 
 nav ul li.active  a{
@@ -124,7 +119,6 @@ nav ul li.active  a{
   background: #1e1e1e;
   border-left: 3px solid transparent;
   border-left-color: cyan;
-
 }
 
 nav ul ul {
@@ -210,92 +204,10 @@ footer {
     }
 }
 
-#h1menu {
-    font-size: 16px;
-}
+
 
 a {
     text-decoration: none;
 }
 
-.slides {
-    gap: 8px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    width: 400px;
-    height: 350px;
-    padding: 32px;
-    border-radius: 32px;
-    
-  }
-
-  .title{
-    font-size: 16px;
-    width:  100%;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  img {
-    width: auto;
-    height: 280px;
-  }
-
-  .botao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 28px;
-    padding-top: 370px;
-  }
-
-  .button {
-    align-content: center;
-    background-color: #D41D1D;
-    color: #fff;
-    width: 200px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 999px;
-  }
-
-  .dot-box {
-    text-align: center;
-  }
-  
-  .dot {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin: 0 2px;
-    background-color: #c1c1c1;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color .6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #D41D1D;
-  }
-  
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @keyframes fade {
-    from {opacity: .2}
-    to {opacity: 1}
-  }
  
