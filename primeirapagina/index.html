@@ -10,9 +10,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
+    <div class="btn">
+        <span class="fas fa-bars"></span>
+    </div>
     <header>
-       <h1>Os Carros do Alessandro</h1>
-       <p>Aqui você encontra a história de todos os carros do Alessandro</p>
+       
     </header>
 
     <nav class="sidebar"> 
@@ -125,6 +127,10 @@
 
     <script src="incial.js"></script>
    <script>
+    $('.btn').click(function(){
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+    });
     $('.feat-btn').click(function(){
         $('nav ul .feat-show').toggleClass("show");
         $('nav ul .first').toggleClass("rotate");
