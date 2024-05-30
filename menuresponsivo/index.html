@@ -5,17 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <ul>
-        <li>Home</li>
-        <li>Sobre</li>
-        <li>Serviços</li>
-        <li>Clientes</li>
-        <li>Invista</li>
-        <li>Preços</li>
-        <li>Treinamento</li>
-        <li>Contato</li>
-    </ul>
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i>Sobre</a>
+            
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Missão</a></li>
+                        <li><a href="#">Visão</a></li>
+                        <li><a href="#"></a>Time</li>
+                    </ul>
+
+                </div>
+
+            </li>
+            <li><a href="#"><i class="fa-solid fa-clone"></i>Serviços</a>
+                
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Web Desingning</a></li>
+                        <li class="hover-me"><a href="#">Marketing</a><i class="fa fa-angle-right"></i>
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li><a href="#">SEO</a></li>
+                                <li><a href="#">Social Media</a></li>
+                                <li><a href="#">Emial Marketing</a></li>
+                            </ul>      
+                        </div>
+                        </li>
+                        <li class="hover-me"><a href="#"></a>APP movel<i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">Android App</a></li>
+                                    <li><a href="#">iOS App</a></li>
+                                    <li><a href="#">Ionic App</a></li>
+                                    <li><a href="#">Flutter App</a></li>
+                                    <li><a href="#">Unity App</a></li>
+                                </ul>      
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            
+            </li>
+            <li><a href="#"><i class="fa fa-users"></i>Clientes</a></li>
+            <li><a href="#"><i class="fa fa-angellist"></i>Invista</a></li>
+            <li><a href="#"><i class="fa fa-inr"></i>Preços</a></li>
+            <li><a href="#"><i class="fa fa-edit"></i>Treinamento</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i>Contato</a></li>
+        </ul>
+    </div>
 </body>
 </html>
