@@ -115,3 +115,43 @@ main {
     background-color: #fff;
 }
 
+main #principal {
+    background-color: #a68851;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.conteudo {
+    display: table;
+}
+
+.imagem {
+    display: table-cell;
+    float: left;
+    
+}
+
+.texto {
+    display: table-cell;
+    float: right;
+    width: 300px;
+    margin: auto;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.imagem1 {
+    display: table-cell;
+    float: right;
+}
+
+.texto1 {
+    display: table-cell;
+    float: left;
+    width: 300px;
+    margin: auto;
+    margin-right: 20px;
+    text-align: center;
+}
