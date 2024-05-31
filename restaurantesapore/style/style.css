@@ -19,7 +19,28 @@ body {
     background-color: #ebe8e8;
 }
 
+header {
+    height: 220px;
+    background-color: #f2f2f2;
+}
 
+#imgheader {
+    display: block;
+    margin: auto;
+}
+
+header #title1 {
+    text-align: center;
+    color: #402709;
+}
+
+#title2 {
+    color: #402709;
+    text-align: center;
+    text-decoration: overline;
+    font-style: italic;
+}
+ 
 
 nav {
     background-color: #a68851;
@@ -48,10 +69,12 @@ nav .menu-bar ul li a{
 
 nav .menu-bar ul li a:hover {
     background-color: #f2bf5e;
+    border-radius: 3px;
 }
 
 nav .menu-bar .fa-solid {
     margin-right: 18px;
+
 }
 
 nav .menu1 {
@@ -92,20 +115,3 @@ main {
     background-color: #fff;
 }
 
-main aside .aside1{
-    display: flex;
-    flex-direction: column;
-    width: 440px;
-    height: 100%;
-    margin:auto;
-    background-color: aqua;
-
-}
-
-main aside .aside2 {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 100%;
-    background-color: blue;
-}
