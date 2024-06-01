@@ -32,6 +32,7 @@ header {
 header #title1 {
     text-align: center;
     color: #402709;
+    text-shadow: 1px solid rgba(0, 0, 0, 0.473);
 }
 
 #title2 {
@@ -65,6 +66,7 @@ nav .menu-bar ul li {
 nav .menu-bar ul li a{
     color: #fff;
     text-decoration: none;
+    text-shadow: 1px solid rgba(0, 0, 0, 0.473);
 }
 
 nav .menu-bar ul li a:hover {
@@ -121,11 +123,23 @@ main #principal {
     text-align: center;
     padding: 10px;
     margin: auto;
+    text-shadow: 1px solid rgba(0, 0, 0, 0.473);
+}
+
+.containera {
+    background-color: #f2f2f2;
 }
 
 .conteudo {
     display: table;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    
+    
 }
+
+
 
 .imagem {
     display: table-cell;
@@ -136,10 +150,17 @@ main #principal {
 .texto {
     display: table-cell;
     float: right;
-    width: 300px;
+    width: 500px;
     margin: auto;
     margin-left: 20px;
+    margin-top: 55px;
     text-align: center;
+}
+
+.texto h2 {
+    color: #402709;
+}.texto p {
+    color:#917747;
 }
 
 .imagem1 {
@@ -150,8 +171,27 @@ main #principal {
 .texto1 {
     display: table-cell;
     float: left;
-    width: 300px;
+    width: 500px;
     margin: auto;
+    margin-top: 55px;
     margin-right: 20px;
     text-align: center;
+}
+
+.texto1 h2 {
+    color: #402709;
+}
+
+.texto1 p {
+    color:#917747;
+}
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    color: #402709;
+    padding: 10px;
+    margin: auto;
+    background-color: #bfb5a8;
 }
