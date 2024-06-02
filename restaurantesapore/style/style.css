@@ -46,9 +46,18 @@ header #title1 {
 nav {
     background-color: #a68851;
     
+} 
+
+.toggle_btn {
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+
 }
 
 nav .menu-bar {
+    margin: auto;
     text-align: center;
 }
 
@@ -70,18 +79,22 @@ nav .menu-bar ul li a{
 }
 
 nav .menu-bar ul li a:hover {
+    padding: 12px;
     background-color: #f2bf5e;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 nav .menu-bar .fa-solid {
-    margin-right: 18px;
+    margin-right: 5px;
 
 }
 
 nav .menu1 {
     display: none;
+    z-index: 9; /*usar z-index faz com que o menu apareça sobre todas as coisas*/
+    
 }
+
 
 nav .menu-bar ul li:hover .menu1 {
     display: block;
@@ -89,20 +102,21 @@ nav .menu-bar ul li:hover .menu1 {
     background: #a68851;
     margin-top: 10px;
     margin-left: -10px;
+    text-align: center;
 }
 
 nav .menu-bar ul li:hover .menu1 ul {
-    display: block;
+    display: inline-block;
     margin: 5px;
 }
 
 nav .menu-bar ul li:hover .menu1 ul li {
     width: 150px;
-    padding: 5px;
+    padding: 3px;
     border-bottom: 1px solid dotted #fff;
     background: transparent;
-    border-radius: 0px;
-    text-align: left;
+    border-radius: 6px;
+    text-align: center;
 }
 
 nav .menu-bar ul li:hover .menu1 ul li :last-child {
@@ -111,6 +125,62 @@ nav .menu-bar ul li:hover .menu1 ul li :last-child {
 
  .menu-bar ul li:hover .menu1 ul li a:hover {
     color:#402709 ;
+}
+
+.menu-bar .toggle_btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/*Dropdown menu*/
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Responsividade*/
+
+@media (max-width: 992px) {
+    .menu-bar {
+        display: none;
+    }
+}
+.toggle_btn {
+    display: block;
+}
+
+.dropdown_menu {
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left:2rem;
+        width: unset;
+    }
+
 }
 
 main {
