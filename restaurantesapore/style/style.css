@@ -282,3 +282,48 @@ footer {
     
    
 }
+
+.hist {
+    background-color: #ebe8e8;
+}
+
+#hist {
+    color: #402709;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+#hist2 {
+    color: #917747;
+    padding: 10px;
+    margin: auto;
+    font-size: clamp(1.75em, 1em, + 3vw, 2.5em);
+    text-indent: 40px;
+}
+
+#par {
+    color: rgb(12, 11, 11);
+    text-align: justify;
+    padding: 20px;
+    margin: auto;
+    font-size: clamp(1.75em, 1em, + 3vw, 2.5em);
+    text-indent: 40px;
+}
+
+#photo {
+    width: 250px;
+    height: 250px;
+    display: block;
+    align-items: center;
+    
+    
+}
+
+section ava {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
