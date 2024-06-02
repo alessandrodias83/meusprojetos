@@ -265,3 +265,20 @@ footer {
     margin: auto;
     background-color: #bfb5a8;
 }
+
+#location {
+    margin: auto;
+    text-align: center;
+    color: #402709;
+    padding: 10px;
+}
+
+.flex-container {
+    background-color: #ebe8e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
