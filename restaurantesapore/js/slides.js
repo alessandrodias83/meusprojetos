@@ -42,15 +42,22 @@ function slidefun(n) {
 	dot[counter - 1].className += " active";
 }
 
-const toggleBtn = document.querySelector('.toggle_btn')
-const toggleBtnIcon = document.querySelector('.toggle_btn i')
-const dropDownMenu = document.querySelector('.dropdown_menu')
 
-toggleBtn.onclick = function () {
-	dropDownMenu.classList.toggle('open')
-	const isOpen = dropDownMenu.classList.contains('open')
+// menu responsivo
+const btnMobile = document.getElementById('btn-mobile');
 
-	toggleBtnIcon.classList = isOpen
-	? 'fa-solid fa-xmark'
-	: 'fa-solid fa-bars'
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+  }
 }
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);

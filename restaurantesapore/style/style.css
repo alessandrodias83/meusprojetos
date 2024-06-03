@@ -17,23 +17,149 @@
 
 body {
     background-color: #ebe8e8;
+    display: grid;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "h h"
+                        "m a"
+                        "f f"
 }
 
 header {
-    height: 220px;
-    background-color: #f2f2f2;
+    height: 150px;
+    background-color:#917747;
+    grid-area: h;
 }
 
-#imgheader {
+#header {
+    box-sizing: border-box;
+    height: 130px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #917747;
+}
+
+#logo {
     display: block;
-    margin: auto;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
 }
 
-header #title1 {
-    text-align: center;
-    color: #402709;
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.fa-solid {
+    margin-right: 8px;
+}
+
+#menu li {
+    padding: 10px;
+}
+
+#menu a{
+    color: #fff;
+    text-decoration: none;
     text-shadow: 1px solid rgba(0, 0, 0, 0.473);
 }
+
+#menu a:hover {
+    padding: 12px;
+    background-color: #f2bf5e;
+    border-radius: 4px;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+
+
+@media (max-width: 600px) {
+    #btn-mobile {
+        display: block;
+    }
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #e7e7e7;
+        height: 0;
+        transition: 0.6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background-color: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after,   #hamburguer::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hambuguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hambuguer::before {
+        transform: rotate(135deg);
+
+    }
+
+    #nav.active #hambuguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+        
+    }
+}
+
+
 
 #title2 {
     color: #402709;
@@ -43,11 +169,6 @@ header #title1 {
 }
  
 
-nav {
-    background-color: #a68851;
-    
-} 
-
 .toggle_btn {
     color: #f2f2f2;
     font-size: 1.5rem;
@@ -56,47 +177,9 @@ nav {
 
 }
 
-nav .menu-bar {
-    margin: auto;
-    text-align: center;
-}
-
-nav .menu-bar ul {
-    display: inline-flex;
-    list-style: none;
-}
-
-nav .menu-bar ul li {
-    width: 180px;
-    margin: 10px;
-    padding: 10px;
-}
-
-nav .menu-bar ul li a{
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 1px solid rgba(0, 0, 0, 0.473);
-}
-
-nav .menu-bar ul li a:hover {
-    padding: 12px;
-    background-color: #f2bf5e;
-    border-radius: 4px;
-}
-
-nav .menu-bar .fa-solid {
-    margin-right: 5px;
-
-}
-
-nav .menu1 {
-    display: none;
-    z-index: 9; /*usar z-index faz com que o menu apareça sobre todas as coisas*/
-    
-}
 
 
-nav .menu-bar ul li:hover .menu1 {
+.menu-bar ul li:hover .menu1 {
     display: block;
     position: absolute;
     background: #a68851;
@@ -105,12 +188,12 @@ nav .menu-bar ul li:hover .menu1 {
     text-align: center;
 }
 
-nav .menu-bar ul li:hover .menu1 ul {
+.menu-bar ul li:hover .menu1 ul {
     display: inline-block;
     margin: 5px;
 }
 
-nav .menu-bar ul li:hover .menu1 ul li {
+.menu-bar ul li:hover .menu1 ul li {
     width: 150px;
     padding: 3px;
     border-bottom: 1px solid dotted #fff;
@@ -119,7 +202,7 @@ nav .menu-bar ul li:hover .menu1 ul li {
     text-align: center;
 }
 
-nav .menu-bar ul li:hover .menu1 ul li :last-child {
+.menu-bar ul li:hover .menu1 ul li :last-child {
     border-bottom: none;
  }
 
@@ -184,7 +267,8 @@ nav .menu-bar ul li:hover .menu1 ul li :last-child {
 }
 
 main {
-    background-color: #fff;
+    background-color: blue;
+    grid-area: m;
 }
 
 main #principal {
@@ -256,14 +340,16 @@ main #principal {
     color:#917747;
 }
 
+aside {
+    background-color: yellow;
+    grid-area: a;
+}
+
 footer {
-    text-align: center;
-    font-size: 16px;
-    font-style: italic;
-    color: #402709;
-    padding: 10px;
-    margin: auto;
-    background-color: #bfb5a8;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: red;
+    grid-area: f;
 }
 
 #location {
