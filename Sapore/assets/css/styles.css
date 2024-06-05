@@ -71,7 +71,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--cor-02);
+  background-color: var(--cor-04);
   box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
   z-index: var(--z-fixed);
 }
@@ -126,13 +126,15 @@ a {
   transition: opacity .1s, transform .4s;
 }
 
+
+
 .nav__close {
   opacity: 0;
 }
 
 .photo {
-  width: 40px;
-  height: 40%;
+  width: 60px;
+  height: 60px;
   margin-top: 10px;
 
 }
@@ -142,6 +144,7 @@ a {
   font-style: italic;
   font-size: 0.8em;
   margin-top: 5px;
+  color: #402709;
 
 }
 
@@ -256,14 +259,7 @@ a {
   
 }
 
-/*Footer*/
-.footer {
-  background-color: #a68851;
-  color: #f2f2f2;
-  text-align: center;
-  font-size: .9em;
-  padding: 10px;
-}
+
 
 
 /* Navigation for mobile devices */
@@ -286,11 +282,12 @@ a {
     background-color: var(--cor-04);
     padding-top: 1rem;
   }
+
 }
 
 .nav__link {
-  color: var(--white-color);
-  background-color: var(--cor-02);
+  color: var(--cor-01);
+  background-color: var(--cor-04);
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
   display: flex;
@@ -298,6 +295,7 @@ a {
   align-items: center;
   transition: background-color .3s;
 }
+
 
 .nav__link:hover {
   background-color: #f2bf5e;
@@ -336,8 +334,8 @@ a {
 .dropdown__link, 
 .dropdown__sublink {
   padding: 1.25rem 1.25rem 1.25rem 2.5rem;
-  color: var(--white-color);
-  background-color: var(--cor-02);
+  color: var(--cor-01);
+  background-color: var(--cor-04);
   display: flex;
   align-items: center;
   column-gap: .5rem;
@@ -473,4 +471,41 @@ a {
     pointer-events: initial;
     transition: top .3s;
   }
+}
+
+/*Configurações do Main*/
+.section {
+  display: block;
+  align-items: start;
+  background-color: #a68851;
+  width: 1200px;
+  height: 100vh;
+
+}
+.title_h1 {
+  text-align: center;
+  color: #402709;
+  padding: 10px;
+  margin: auto;
+  font-size: 2rem;
+}
+
+.history_p {
+  text-align: justify;
+  color: #1d1306;
+  margin: auto;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-style: normal;
+  text-indent: 40px;
+}
+
+
+/*Footer*/
+.footer {
+  background-color: #a68851;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: .9em;
+  padding: 10px;
 }

@@ -82,7 +82,7 @@
     }
     &__link{
        color: var(--white-color);
-       background-color: var(--black-color);
+       background-color: var(--cor-02);
        font-weight: var(--font-semi-bold);
        padding: 1.25rem 1.5rem;
        display: flex;
@@ -91,7 +91,7 @@
        transition: background-color .3s;
  
        &:hover{
-          background-color: var(--black-color-light);
+          background-color: var(--cor-02);
        }
     }
  }
@@ -167,6 +167,6 @@
        margin-left: auto;
     }
     &__sublink{
-       background-color: var(--black-color-lighten);
+       background-color: var(--cor-02);
     }
  }
