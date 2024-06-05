@@ -12,7 +12,7 @@
   --cor-03:#f2bf5e; /*--black-color-lighten*/
   --white-color: #fff; /**/
   --cor-04: #f2f2f2; /*--body-color*/
-  --cor-05: #bfb5a8;
+  --cor-05: #c7c0b8;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -45,7 +45,19 @@
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--cor-04);
+  background-color: var(--cor-05);
+}
+
+section {
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 ul {
@@ -71,7 +83,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--cor-04);
+  background-color: var(--cor-05);
   box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
   z-index: var(--z-fixed);
 }
@@ -84,7 +96,7 @@ a {
 .nav__logo, 
 .nav__burger, 
 .nav__close {
-  color: var(--white-color);
+  color: var(--cor-01);
 }
 
 .nav__data {
@@ -142,7 +154,7 @@ a {
 .subtitulo {
   font-weight: normal;
   font-style: italic;
-  font-size: 0.8em;
+  font-size: 1rem;
   margin-top: 5px;
   color: #402709;
 
@@ -279,7 +291,7 @@ a {
     width: 0;
   }
   .nav__list {
-    background-color: var(--cor-04);
+    background-color: var(--cor-05);
     padding-top: 1rem;
   }
 
@@ -287,7 +299,7 @@ a {
 
 .nav__link {
   color: var(--cor-01);
-  background-color: var(--cor-04);
+  background-color: var(--cor-05);
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
   display: flex;
@@ -298,7 +310,7 @@ a {
 
 
 .nav__link:hover {
-  background-color: #f2bf5e;
+  background-color: var(--cor-05);
   color: #402709;
  
 }
@@ -335,7 +347,7 @@ a {
 .dropdown__sublink {
   padding: 1.25rem 1.25rem 1.25rem 2.5rem;
   color: var(--cor-01);
-  background-color: var(--cor-04);
+  background-color: var(--cor-05);
   display: flex;
   align-items: center;
   column-gap: .5rem;
@@ -474,14 +486,7 @@ a {
 }
 
 /*Configurações do Main*/
-.section {
-  display: block;
-  align-items: start;
-  background-color: #a68851;
-  width: 1200px;
-  height: 100vh;
 
-}
 .title_h1 {
   text-align: center;
   color: #402709;
@@ -499,6 +504,39 @@ a {
   font-style: normal;
   text-indent: 40px;
 }
+
+#location2 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  
+}
+
+#fb-root {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+section #history_photo{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#menu-photo {
+  min-width: 300px;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
 
 
 /*Footer*/
