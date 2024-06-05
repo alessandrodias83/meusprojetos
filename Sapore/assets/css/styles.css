@@ -7,11 +7,11 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --black-color: #402709;
-  --black-color-light: #a68851;
-  --black-color-lighten:#f2bf5e;
-  --white-color: #fff;
-  --body-color: f2f2f2;
+  --black-color: #402709; /*--black-color*/
+  --black-color-light: #a68851; /*--black-color-light:*/
+  --black-color-lighten:#f2bf5e; /*--black-color-lighten*/
+  --white-color: #fff; /**/
+  --body-color: f2f2f2; /*--body-color*/
   --cor-04: #bfb5a8;
 
   /*========== Font and typography ==========*/
@@ -67,6 +67,7 @@ a {
 /*=============== HEADER ===============*/
 .header {
   position: fixed;
+  height: 100px;
   top: 0;
   left: 0;
   width: 100%;
@@ -128,6 +129,20 @@ a {
 .nav__close {
   opacity: 0;
 }
+
+.photo {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+
+}
+
+.subtitulo {
+  font-weight: normal;
+  font-style: italic;
+  padding: 10px;
+}
+
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1118px) {
