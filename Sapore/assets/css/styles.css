@@ -283,7 +283,7 @@ a {
     width: 0;
   }
   .nav__list {
-    background-color: var(--cor-02);
+    background-color: var(--cor-04);
     padding-top: 1rem;
   }
 }
@@ -300,7 +300,9 @@ a {
 }
 
 .nav__link:hover {
-  background-color: var(--cor-03);
+  background-color: #f2bf5e;
+  color: #402709;
+ 
 }
 
 /* Show menu */
