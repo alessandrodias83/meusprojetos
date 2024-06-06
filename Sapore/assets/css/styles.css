@@ -164,11 +164,13 @@ a {
 .slider {
   position: relative;
   width: 100%;
+  max-width: 100%;
 
 }
 
 .myslider{
   height:750px;
+  max-width: 100%;
   display: none;
   overflow: hidden;
 
@@ -176,7 +178,7 @@ a {
 
 .prev, .next {
   position: absolute;
-  top: 80%;
+  top: 50%;
   transform: translate(0, -50%);
   font-size: 50px;
   padding: 15px;
@@ -194,13 +196,6 @@ a {
   right: 0;
 }
 
-.dotsbox{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: 20px;
-  cursor: pointer;
-}
 
 .dot { /*botões em baixo da foto, deixar ou retirar?*/
   display: inline-block;
@@ -224,9 +219,9 @@ a {
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.3s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.3s;
 }
 
 @-webkit-keyframes fade {
@@ -240,7 +235,7 @@ a {
 }
 
 #zoom {
-  transform: scale(1.5, 1.5);
+  transform: scale(1.25, 1.25);
   -webkit-animation-name: zoomin;
   -webkit-animation-duration: 40s;
   animation-name: zoomin;
@@ -249,12 +244,12 @@ a {
 
 @-webkit-keyframes zoomin {
   from {transform: scale(1, 1)}
-  to {transform: scale(1.5, 1.5);}
+  to {transform: scale(1.25, 1.25);}
 }
 
 @keyframes zoomin {
   from {transform: scale(1, 1)}
-  to {transform: scale(1.5, 1.5);}
+  to {transform: scale(1.25, 1.25);}
 }
 
 @media screen and (max-width: 800px) {
@@ -496,6 +491,7 @@ a {
 }
 
 .history_p {
+  
   text-align: justify;
   color: #1d1306;
   margin: auto;
@@ -506,6 +502,7 @@ a {
 }
 
 #location2 {
+  max-width: 100%;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -513,12 +510,14 @@ a {
 }
 
 #fb-root {
+  max-width: 100%;
   display: flex;
   justify-content: center;
   margin: auto;
 }
 
 section #history_photo{
+  max-width: 100%;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -526,7 +525,7 @@ section #history_photo{
 
 #menu-photo {
   min-width: 300px;
-  max-width: 900px;
+  max-width: 100%;
   margin: auto;
   margin-bottom: 30px;
   padding: 20px;
