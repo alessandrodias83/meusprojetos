@@ -528,7 +528,7 @@ section #history_photo{
   max-width: 100%;
   margin: auto;
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 10px;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
   border-bottom-left-radius: 10px;
@@ -536,6 +536,84 @@ section #history_photo{
 
 }
 
+#photo-reserve {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  width: 600px;
+  margin-top: 87px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+section .sectionr {
+ 
+  height: 80vh;
+}
+
+form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form input, form textarea {
+  outline: unset;
+  padding: 20px;
+  width: 300px;
+  border: 1px solid #a68851;
+  border-radius: 30PX;
+}
+
+form input:focus, form textarea:focus {
+  background-color:#e7e4e4;
+}
+
+form input[type="submit"] {
+  background-color: #a68851;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+form input[type="submit"]:hover {
+  background-color: #f2bf5e;
+  color: #402709;
+}
+
+form label {
+  margin-left: 10px;
+}
+
+#config{
+  font-size: 1.2rem;
+  color: #402709;
+  text-align: center;
+
+}
+
+section .contact {
+  padding: 20px;
+  margin: 10px;
+}
+
+h4 {
+  color: #402709;
+}
+
+ #contact {
+  color: #a68851;
+
+}
 
 
 /*Footer*/
