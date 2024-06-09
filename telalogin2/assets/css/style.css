@@ -8,9 +8,9 @@
     --color-dark-100: #353538;
     --color-dark-900: #000;
 
-    --color-purple-50: #7c3aed;
-    --color-purple-100: #a855f7;
-    --color-purple-200: #bf46ef;
+    --color-purple-50: #08bb67;
+    --color-purple-100: #238a70;
+    --color-purple-200: #105c40;
 
     --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200))
 
