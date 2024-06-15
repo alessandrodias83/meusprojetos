@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="../css/styles.css">
 
+
 </head>
 <body>
     <header>
@@ -22,15 +23,19 @@
 
            <ul id="nav_list">
             <li class="nav-item active">
-                <a href="#home">Início</a>
+                <a href="../../index.html">Início</a>
             </li>
 
             <li class="nav-item">
-                <a href="#menu">Cardápio</a>
+                <a href="../html/menu.html">Cardápio</a>
             </li>
 
             <li class="nav-item">
                 <a href="#testimonials">Avaliações</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="src/html/contact.html">Contato</a>
             </li>
 
            </ul>
@@ -46,15 +51,19 @@
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
                 <li class="nav-item">
-                    <a href="#home">Início</a>
+                    <a href="../../index.html">Início</a>
                 </li>
     
                 <li class="nav-item">
-                    <a href="#menu">Cardápio</a>
+                    <a href="../html/menu.html">Cardápio</a>
                 </li>
     
                 <li class="nav-item">
                     <a href="#testimonials">Avaliações</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="src/html/contact.html">Contato</a>
                 </li>
     
                </ul>
@@ -67,6 +76,32 @@
     </header>
 
     <main id="content">
+        <section id="menu">
+            <h2>Faça Hoje Mesmo Sua Reserva</h2>
+
+            <div id="formulario">
+                <form action="">
+                    <label for="nome" id="form_defination">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Seu Nome">
+
+                    <label for="data" id="form_defination" >Data</label>
+                    <input type="date" name="date" id="date">
+
+                    <label for="hora" id="form_defination">Hora</label>
+                    <input type="time" name="time" id="time">
+
+                    <label for="email" id="form_defination">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail">
+
+                    <label for="obs" id="form_defination">Alguma Observação?</label>
+                    <input type="text" name="obs" id="obs">
+
+                    <input type="button" id="btn_contact" value="Enviar">
+                
+                </form>
+            </div>
+
+        </section>
 
     </main>
 
