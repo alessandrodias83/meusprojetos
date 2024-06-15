@@ -23,6 +23,7 @@ header {
     font-size: 2.5rem;
     font-weight: bold;
     color: #e9a209;
+    font-weight: bolder;
 }
 
 #nav_list {
@@ -33,7 +34,7 @@ header {
 
 .nav-item a {
     text-decoration: none;
-    color: #1d1d1dad;
+    color: #1d1d1d;
     font-weight: 600;
 }
 

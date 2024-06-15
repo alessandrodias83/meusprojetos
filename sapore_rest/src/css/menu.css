@@ -58,6 +58,28 @@
     gap: 20px;
 }
 
+#know_more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-more {
+    display: flex;
+    border: none;
+    gap: 18px;
+    align-items: center;
+    background-color: #ffcb45;
+    color: #1d1d1d;
+    width: 100px;
+    padding: 8px 14px;
+    font-weight: 500;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
 @media screen and (max-width: 1170px) {
     #dishes {
         flex-wrap: wrap;
