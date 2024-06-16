@@ -24,6 +24,7 @@ form {
     font-size: 1rem;
     width: 300px;
     height: 40px;
+    border-radius: 4px;
 }
 
 #formulario #form_defination {
@@ -47,4 +48,10 @@ form {
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#text_contact {
+    color: #e9a209;
+    font-size: 1.75rem;
+    font-weight: bold;
 }
