@@ -79,6 +79,11 @@
     cursor: pointer;
 }
 
+.btn-more a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
 /*Configuração da tabela*/
 
 table {
