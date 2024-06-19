@@ -1,0 +1,96 @@
+
+.container {
+    background: #fafafa;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    background-color: #fafafa;
+    border-radius: 10px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+    overflow: hidden;
+    background-color: #aac09f;
+}
+
+form {
+    padding: 18px;
+   
+
+}
+
+#form_text {
+    text-align: center;
+    color: #387727;
+}
+
+#form_inscricao {
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+#form_inscricao label {
+    display: inline-block;
+    margin-bottom: 4px;
+
+}
+
+#form_inscricao input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+
+
+#form_option {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    
+}
+
+
+#form_option input {
+    margin: 8px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 8px;
+}
+
+#form_payment {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+
+}
+
+#form_payment input {
+    margin: 8px;
+}
+
+
+
+#btn_inscricao {
+    background-color: #387727;
+    color: #FFF;
+    width: 100%;
+    border-radius: 14px;
+    padding: 5px;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+  
+}

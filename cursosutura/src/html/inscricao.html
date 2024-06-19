@@ -22,13 +22,13 @@
 
             <ul id="nav_list">
 
-                <li class="nav-item active"><a href="#">Home</a></li>
+                <li class="nav-item active"><a href="../../index.html">Home</a></li>
 
-                <li class="nav-item"><a href="#">Programação</a></li>
+                <li class="nav-item"><a href="programacao.html">Programação</a></li>
 
                 <li class="nav-item"><a href="#">Professores</a></li>
 
-                <li class="nav-item"><a href="#">Inscrição</a></li>
+                <li class="nav-item"><a href="inscricao.html">Inscrição</a></li>
 
             </ul>
 
@@ -52,8 +52,12 @@
 
     </header>
 
-    <main>
-        <form id="container">
+    <main class="container">
+
+        
+        <form id="form">
+            <h1 id="form_text">Formulário de Inscrição</h1>
+
             <div id="form_inscricao">
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="name" placeholder="Digite seu nome">
@@ -99,11 +103,13 @@
             
                 <input type="radio" name="bol" id="bol"> <label for="bol">Boleto Bancario </label>
             </div>
+
+            <button id="btn_inscricao">
+                <input id="btn_inscricao" type="submit" value="Fazer Inscrição">
+            </button>
         </form>
 
-        <button id="btn_inscricao">
-            <input type="submit" value="Fazer Inscrição">
-        </button>
+        
     </main>
     
 </body>
