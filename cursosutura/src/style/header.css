@@ -74,6 +74,10 @@ header {
         display: none;
     }
 
+    #logo_title {
+        font-size: 1.4rem;
+    }
+
     #mobile_btn {
         display: block;
         border: none;
