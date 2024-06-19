@@ -53,35 +53,57 @@
     </header>
 
     <main>
-        <form>
-            <div>
+        <form id="container">
+            <div id="form_inscricao">
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="name" placeholder="Digite seu nome">
             </div>
 
-            <div>
+            <div id="form_inscricao">
                 <label for="adress">Endereço</label>
                 <input type="text" name="adress" id="adress" placeholder="Digiete seu endereço">
 
             </div>
 
-            <div>
+            <div id="form_inscricao">
                 <label for="phone">Telefone</label>
                 <input type="tel" name="phone" id="phone" placeholder="Digite seu telefone">
             </div>
 
-            <div>
+            <div id="form_inscricao">
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
             </div>
 
-            <div>
-                <label for="search">Como Ficou sabendo do Curso?</label>
-                <input type="radio" name="search" id="search">
+            <div id="form_option">
+                
+                    <legend>Como ficou Sabendo do Curso?</legend>
+                    <input type="checkbox" name="search" id="search"> <label for="friends">Amigos</label>
+
+                    <input type="checkbox" name="search" id="search"> <label for="facebook">Facebook</label>
+
+                    <input type="checkbox" name="search" id="search"> <label for="instagran">Instagran</label>
+
+                    <input type="checkbox" name="search" id="search"> <label for="site">Site Dinâmica</label>
+
+                    <input type="checkbox" name="search" id="search"> <label for="email">E-mail</label>
+
+                    <input type="checkbox" name="search" id="search"> <label for="whatsapp">Whatsapp</label>
+                
             </div>
 
+            <div id="form_payment">
+                <label for="pay">Como você prefere pagar?</label>
+                <input type="radio" name="pix" id="pix"> <label for="pix">Pix</label>
 
+            
+                <input type="radio" name="bol" id="bol"> <label for="bol">Boleto Bancario </label>
+            </div>
         </form>
+
+        <button id="btn_inscricao">
+            <input type="submit" value="Fazer Inscrição">
+        </button>
     </main>
     
 </body>
