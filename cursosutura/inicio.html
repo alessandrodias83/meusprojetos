@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -10,15 +11,15 @@
     <link rel="stylesheet" href="src/style/style.css">
 
     <title>Enfermagem Dinâmica</title>
-
 </head>
+
 <body>
 
     <header>
         <nav id="navbar">
             <a href="#">
-                <img id="nav_logo" src="src/images/logo250enf.png" alt="logo enfermagem">
-           </a><p id="logo_text">Curso de Sutura para Enfermeiros </p>
+                <img id="nav_logo" src="src/images/logo250enf.png" alt="">
+            </a>
 
             <ul id="nav_list">
 
@@ -40,7 +41,7 @@
 
                 <li class="nav-item"><a href="#">Home</a></li>
 
-                <li class="nav-item"><a href="src/html/programacao.html">Programação</a></li>
+                <li class="nav-item"><a href="#">Programação</a></li>
 
                 <li class="nav-item"><a href="#">Professores</a></li>
 
@@ -52,53 +53,55 @@
 
     </header>
 
-    <main>
-        <section id="home">
-            <div class="shape"></div>
+    <main id="content">
 
-            <div id="cta">
-                <h1 class="title">
-                    Esta na hora de você
-                    <span>aprender</span>
-                </h1>
+      
 
-                <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit ut aliquam, purus sit amet
-                </p>
-
-                <div id="cta_buttons">
-                    <a href="#" class="btn-default">
-                        Mais Informações
-                    </a>
-
-                    <a href="tel:+55555555555" id="phone_button">
-                        <button class="btn-default">
-                            <i class="fa-solid fa-phone"></i>
-                        </button>
-                        (31) 9773-6049
-                    </a>
+            <section id="home">
+                <div class="shape"></div>
+                <div id="cta">
+                    <h1 class="title">
+                        Esta na hora de você
+                        <span>aprender</span>
+                    </h1>
+    
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit ut aliquam, purus sit amet
+                    </p>
+    
+                    <div id="cta_buttons">
+                        <a href="#" class="btn-default">
+                            Mais Informações
+                        </a>
+    
+                        <a href="tel:+55555555555" id="phone_button">
+                            <button class="btn-default">
+                                <i class="fa-solid fa-phone"></i>
+                            </button>
+                            (31) 9773-6049
+                        </a>
+                    </div>
+    
+                    <div class="social-media-buttons">
+                        <a href="">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+    
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+    
+                        <a href="">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="social-media-buttons">
-                    <a href="">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-
-                    <a href="">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-
-                </div>
-            </div>
-
+    
             <div id="banner">
-                <img src="src/images/banner.png" alt="">
+                <img src="src/images/sutura5.png" alt="">
             </div>
+
         </section>
 
         <section id="testimonials">
@@ -106,15 +109,17 @@
             <img src="src/images/sutura2.png.png" id="testimonial_chef" alt="">
 
             <div id="testimonials_content">
-               
-
+                <h2 class="section-title">
+                    Informações
+                </h2>
                 <h3 class="section-subtitle">
-                    Esse curso é para você?
+                    Esse curso é para vocâ?
                 </h3>
 
                 <div id="feedbacks">
-
                     <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
                         <div class="feedback-content">
                             <p>
                                 <span id="sub_title">Legislação atual</span>
@@ -127,6 +132,7 @@
                     </div>
 
                     <div class="feedback">
+
                         <div class="feedback-content">
                             <p>
                                <span id="sub_title">O que vou aprender?</span>
@@ -137,21 +143,19 @@
                             </p>
                         </div>
                     </div>
-
                 </div>
+
+                <button class="btn-default">
+                    Saiba mais
+                </button>
             </div>
-
-            <button class="btn-default">
-                Saiba mais
-            </button>
-
         </section>
-
+       
 
     </main>
 
     <footer>
-    
+        <!--imagem wave-->
 
         <div id="footer_items">
             <span id="copyright">
@@ -173,6 +177,8 @@
             </div>
 
         </div>
-    </footer>    
+    </footer>
+    
+    <script src="src/script/script.js"></script>
 </body>
 </html>
