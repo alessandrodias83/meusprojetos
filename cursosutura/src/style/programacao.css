@@ -1,0 +1,50 @@
+#content_prog {
+   
+
+}
+
+#title_prog {
+    color:#387727;
+    text-align: center;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+#table {
+    background-color: #caddc1;
+}
+
+#date_event {
+    padding: 10px;
+    margin: 10px;
+    color: #387727;
+    font-weight: 600;
+}
+
+#section-title {
+    color: #387727;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+tbody {
+    padding: 10px;
+    margin: 10px;
+}
+
+td {
+    padding: 5px;
+}
+
+#programacao_img {
+    width: 450px;
+    border-radius: 20px;
+}

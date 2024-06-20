@@ -49,15 +49,7 @@ header {
     border-radius: 8px;
 }
 
-.nav-item.active a {
-    color: #0D0D0D;
-    border-bottom: 3px solid #5BBF3F;
-}
 
-.nav-item.active a:hover {
-    background: #5BBF3F;
-    color:#F2F2F2;
-}
 
 
 #mobile_btn {

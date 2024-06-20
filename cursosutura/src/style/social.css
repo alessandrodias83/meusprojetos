@@ -1,4 +1,5 @@
 /*Social media*/
+
 .btn-default {
     border: none;
     display: flex;
@@ -131,9 +132,10 @@
     right: 0;
     z-index: 1;
 }
+ 
 
 
-
+/*Tablet*/
 @media screen and (max-width: 1170px) {
     #home {
         min-height: 100%;
@@ -143,11 +145,7 @@
     #banner, #banner img, 
     #home .shape {
         display: none;
-    }
-
-    
-
-    
+    } 
 
     #cta {
         width: 100%;
@@ -156,9 +154,24 @@
     }
 }
 
+/*Celular*/
 @media screen and (max-width: 450px) {
     #phone_button button {
         display: none;
     }
+
+    #phone_button {
+        width: 160px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    #phone_button:hover {
+        background-color: #5BBF3F;
+        color: #F2F2F2;
+    }
+
+   
+
 
 }
