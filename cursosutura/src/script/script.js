@@ -52,7 +52,26 @@ $(document).ready(function() {
         duration: 1000,
         distance: '20%'
     })
+
+    ScrollReveal().reveal('#programacao', {
+        origin: 'right',
+        duration: 1000,
+        distance: '20%'
+    })
+
+    ScrollReveal().reveal('.tinst1', {
+        origin: 'left',
+        duration: 1000,
+        distance: '20%'
+    })
+
+    ScrollReveal().reveal('.tinst2', {
+        origin: 'right',
+        duration: 1000,
+        distance: '20%'
+    })
 });
+
 
 
 
