@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 6fr 1fr;
+   grid-template-rows: 10vh 80vh 10vh;
+   grid-template-areas: "h h"
+                        "m a"
+                        "f f"
+
+}
+header {
+    background: #263C6E;
+    height: 100%;
+    grid-area: h;
+    
+}
+
+main {
+    background: #e2e4e9;
+    height: 100%;
+    grid-area: m;
+    
+}
+aside {
+    background: #617299;
+    height: 100%;
+    grid-area: a;
+    
+}
+
+footer {
+    background: #263C6E;
+    height: 100%;
+    grid-area: f;
+}
+
+#content_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo a i {
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#nav_menu a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    transition: .2s;
+}
+
+#nav_menu a:hover {
+    background: #899bc5;
+    color: #000717;
+    border-radius: 10px;
+    font-weight: bold;
+    scale: 1.1;
+}
+
+#shopping_cart {
+    display: block;
+    color: #fff;
+    padding: 30px;
+    font-size: 1.5rem;
+    transition: .2s;
+}
+
+#shopping_cart:hover {
+    background: #899bc5;
+}
+
+#shopping_cart i:hover {
+    scale: 1.2;
+}
+
+/*
+
+#263C6E
+#BDC1C9
+#617299
+#061945
+#000717
+
+*/
