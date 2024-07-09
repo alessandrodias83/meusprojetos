@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Barra de Pesquisa</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="input-group">
+            <div class="input-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <input 
+            type="text" 
+            id="search" 
+            class="input-field" 
+            placeholder="Pesquisar"
+            >
+
+        </div>
+
+        <ul class="items">
+
+            <li class="item">
+                <div class="item-image">
+                    <img src="src/images/avangers.jpg" alt="Avengers posters">
+                </div>
+                <div class="item-content">
+                    <h2 class="item-title">Avengers</h2>
+
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-film"></i>
+                        Filme (2019)
+                    </p>
+
+                    <p class="item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </li>
+
+            <li class="item">
+                <div class="item-image">
+                    <img src="src/images/harry-potter.png" alt="Harry Potter posters">
+                </div>
+                <div class="item-content">
+                    <h2 class="item-title">Harry Potter</h2>
+
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-film"></i>
+                        Filme (2001)
+                    </p>
+
+                    <p class="item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </li>
+
+            <li class="item">
+                <div class="item-image">
+                    <img src="src/images/duna.jpg" alt="Duna posters">
+                </div>
+                <div class="item-content">
+                    <h2 class="item-title">Duna Parte 2</h2>
+
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-film"></i>
+                        Filme (2024)
+                    </p>
+
+                    <p class="item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </li>
+
+            <li id="no_results">
+                <p>Nenhum resultado encontrado</p>
+            </li>
+
+        </ul>
+
+
+    </div>
+    
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
