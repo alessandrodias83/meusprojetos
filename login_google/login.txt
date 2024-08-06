@@ -1,0 +1,4 @@
+
+id cliente: 106411506580-qhggb094fuu885bttnjde6ff8pmpuck7.apps.googleusercontent.com
+
+chave secreta: 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
