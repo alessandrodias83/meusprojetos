@@ -11,7 +11,7 @@ function handleCredentialResponse(response) {
   }
   
   window.onload = function () {
-    const clientID = window.prompt("106411506580-qhggb094fuu885bttnjde6ff8pmpuck7.apps.googleusercontent.com", "")
+    const clientID = window.prompt("colar cliente", "")
   
     google.accounts.id.initialize({
       client_id: clientID,
