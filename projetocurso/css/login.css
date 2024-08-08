@@ -3,11 +3,11 @@ body {
     
 }
 
-
 main {
     height: 80%;
     width: 100vw;
 }
+
 
 .cadastrar{
     display: flex;
@@ -21,16 +21,24 @@ main {
 }
 
 .login_form {
-    background-color: #0E2D2F;
-    width: 250px;
+    background: linear-gradient(90deg, #0E2D2F, #144a4d) ;
+    width: 400px;
+    max-width: 80%;
+    height: 400px;
+    max-height: 80%;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
     height: fit-content;
 }
 
+.inputs {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 .input-box {
-    color: #fff;
+        color: #fff;
 }
 
 .input-field {
@@ -41,24 +49,34 @@ main {
     cursor: text;
     border-bottom: #fff;
 }
-
+.text_login {
+    padding: 20px;
+    margin: 20px;
+    color: #fff;
+}
 .text_input {
-    width: 200px;
+    width: 300px;
     font-size: 18px;
     border: none;
     background-color: transparent;
-    border-bottom: #fff;
+    color: #fff;
+    border-bottom: 1px solid #fff;
    
 }
 
 .login_submit {
-    height: 40px;
-    width: 100px;
-    padding: 10px;
+    height: 50px;
+    width: 350px;
     border-radius: 10px;
     border: none;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    text-align: center;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

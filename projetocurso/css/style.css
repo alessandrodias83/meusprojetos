@@ -7,6 +7,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    background-color: #e3eeeb;
+}
+
 nav {
     height: 80px;
     width: 100vw;
@@ -35,4 +39,10 @@ a {
     color: #fff;
     text-decoration: none;
     padding: 10px;
+}
+
+a:hover {
+    color: #6d64df;
+    font-size: 18px;
+   
 }
