@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Minha extensão",
+    "version": "1.0.0",
+    "description": "Minha primeira extensão para o Google Chrome",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+        "default_popup": "index.html"
+    }
+  }
