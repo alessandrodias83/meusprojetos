@@ -13,7 +13,7 @@ export default function Login() {
             </Title>
             <Paragrafo>Loren Lowrem dsd ddsad
             </Paragrafo>
-            <a href="">Link</a>
+            <button type="button">Enviar</button>
         </Container>
 
     );
