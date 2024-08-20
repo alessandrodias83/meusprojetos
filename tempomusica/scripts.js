@@ -93,6 +93,7 @@ async function obterAcessoToken() {
     });
     
     const data = await response.json()
+    
 
     return data.acess_token;
     console.log(data);
@@ -100,7 +101,8 @@ async function obterAcessoToken() {
 
 
 async function obterTopAlbunsPorPais() {
-    const acessToken = await obterAcessoToken();
+    try {
+        const acessToken = await obterAcessoToken();
 
     const url = `https://api.spotify.com/v1/browse/featured-playlists?offset=0&limit=3&locale=pt-BR,pt;q%3D0.9,en-US;q%3D0.8,en;q%3D0.7`;
 
@@ -109,7 +111,20 @@ async function obterTopAlbunsPorPais() {
             'Authorization': `Bearer ${acessToken}`
         }
     });
-    console.log(resultado);
+    if(resultado.status === 200) {
+        const result = data.playlist.items.map(item => ({
+            name: item.name,
+            image: item.images[0].url
+        }))
+        console.log(result);
+    } else {
+        throw new Error
+    }
+
+    } catch {
+        alert('A pesquisa por musica deu errado!')
+    }
+
 }
 
 obterTopAlbunsPorPais()
