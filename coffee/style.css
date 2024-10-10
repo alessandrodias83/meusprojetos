@@ -122,12 +122,12 @@ section {
     height: 5rem;
     display: flex;
     align-items: center;
-    transform: scaleX(0);
+    transform: scaleY(0);
     transform-origin: top;
 }
 
-.header .search-form{
-    transform: scaleX(1);
+.header .search-form.active{
+    transform: scaleY(1);
 }
 
 .header .search-form input {
@@ -586,12 +586,13 @@ section {
     #menu-btn {
         display: inline-block;
     }
+   
 
     .header .navbar{
+        background: #fff;
         position: absolute;
         top: 100%;
         right: -100%;
-        background: #fff;
         width: 30rem;
         height: calc(100% - 9.5rem);
     }
@@ -609,6 +610,7 @@ section {
     }
     .header .search-form {
         width: 90%;
+        font-size: 2rem;
     }
 
     .home {
