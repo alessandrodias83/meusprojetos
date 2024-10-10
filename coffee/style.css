@@ -586,10 +586,12 @@ section {
     #menu-btn {
         display: inline-block;
     }
-   
 
-    .header .navbar{
+    .background {
         background: #fff;
+    }
+   
+    .header .navbar{
         position: absolute;
         top: 100%;
         right: -100%;
